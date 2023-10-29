@@ -1,0 +1,19 @@
+<% layout('/layouts/boilerplate') %>
+
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+    <% for(let mountains of listing){%> 
+        <a href="/listings/<%= mountains._id %>" class="listing-link">
+            <div class="card col listing-card">
+                <img src="<%= mountains.image.url %>" class="card-img-top" alt="listing_image" style="height:20rem">
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b><%= mountains.title %></b> <br>
+                            &#8377; <%= mountains.price.toLocaleString("en-IN") %> /night
+                        </p>
+                </div>
+            </div>
+        </a>
+        
+    <% } %>
+</div>
