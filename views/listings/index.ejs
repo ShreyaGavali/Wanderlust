@@ -35,44 +35,55 @@
         text-decoration: none;
         color:black;
     }
+    @media only screen and (max-width: 320px){
+        .section2 .section3{
+            display:none;
+        }
+    }
 </style>
 
 <div id="filters">
-    <div class="filter">
-        <a href="/listings/trending"><div><i class="fa-solid fa-fire"></i></div>
-        <p>Trending</p></a>
+    <div class="section1">
+        <div class="filter">
+            <a href="/listings/trending"><div><i class="fa-solid fa-fire"></i></div>
+            <p>Trending</p></a>
+        </div>
+        <div class="filter">
+            <a href="/listings/rooms"><div><i class="fa-solid fa-bed"></i></div>
+            <p>Rooms</p></a>
+        </div>
+        <div class="filter">
+            <a href="/listings/iconic"><div><i class="fa-solid fa-mountain-city"></i></div>
+            <p>Iconic Cities</p></a>
+        </div>
     </div>
-    <div class="filter">
-        <a href="/listings/rooms"><div><i class="fa-solid fa-bed"></i></div>
-        <p>Rooms</p></a>
+    <div class="section2">
+        <div class="filter">
+            <a href="/listings/mountains"><div><i class="fa-solid fa-mountain-sun"></i></div>
+            <p>Mountains</p></a>
+        </div>
+        <div class="filter">
+            <a href="/listings/castles"><div><i class="fa-brands fa-fort-awesome"></i></div>
+            <p>Castles</p></a>
+        </div>
+        <div class="filter">
+            <a href="/listings/pools"><div><i class="fa-solid fa-person-swimming"></i></div>
+            <p>Amazing Pools</p></a>
+        </div>
     </div>
-    <div class="filter">
-        <a href="/listings/iconic"><div><i class="fa-solid fa-mountain-city"></i></div>
-        <p>Iconic Cities</p></a>
-    </div>
-    <div class="filter">
-        <a href="/listings/mountains"><div><i class="fa-solid fa-mountain-sun"></i></div>
-        <p>Mountains</p></a>
-    </div>
-    <div class="filter">
-        <a href="/listings/castles"><div><i class="fa-brands fa-fort-awesome"></i></div>
-        <p>Castles</p></a>
-    </div>
-    <div class="filter">
-        <a href="/listings/pools"><div><i class="fa-solid fa-person-swimming"></i></div>
-        <p>Amazing Pools</p></a>
-    </div>
-    <div class="filter">
-        <a href="/listings/camping"><div><i class="fa-solid fa-campground"></i></div>
-        <p>Camping</p></a>
-    </div>
-    <div class="filter">
-        <a href="/listings/farms"><div><i class="fa-solid fa-wheat-awn"></i></div>
-        <p>Farms</p></a>
-    </div>
-    <div class="filter">
-        <a href="/listings/artic"><div><i class="fa-regular fa-snowflake"></i></div>
-        <p>Arctic</p></a>
+    <div class="section3">
+        <div class="filter">
+            <a href="/listings/camping"><div><i class="fa-solid fa-campground"></i></div>
+            <p>Camping</p></a>
+        </div>
+        <div class="filter">
+            <a href="/listings/farms"><div><i class="fa-solid fa-wheat-awn"></i></div>
+            <p>Farms</p></a>
+        </div>
+        <div class="filter">
+            <a href="/listings/artic"><div><i class="fa-regular fa-snowflake"></i></div>
+            <p>Arctic</p></a>
+        </div>
     </div>
     <div class="tax-toggle">
         <div class="form-check-reverse form-switch">
